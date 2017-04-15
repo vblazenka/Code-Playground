@@ -18,7 +18,7 @@ fn main() {
         io::stdin().read_line(&mut guess)
             .expect("Failed to read line");
     
-        // Parse int to int, and ignore if input is a non-number
+        // Parse string to int, and ignore if input is a non-number
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
